@@ -12,7 +12,7 @@ var mary = {
     email: "mary.johnson@example.com"
 };
 
-
+//array of the contacts
 var contacts = [bob, mary];
 
 //print user
