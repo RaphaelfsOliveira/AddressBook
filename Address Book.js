@@ -15,18 +15,19 @@ var mary = {
 
 var contacts = [bob, mary];
 
+//print user
 function printPerson(person) {
     console.log(person.firstName + " " + person.lastName);
 };
 
+//list all contacts
 function list() {
 	for (var i = 0; i < contacts.length; i++) {
 		printPerson(contacts[i]);
 	}
 };
 
-/*Create a search function
-then call it passing "Jones"*/
+/*Search function*/
 function search(lastName){
     	for (var i = 0; i < contacts.length; i++) {
     	    if(contacts[i].lastName === lastName){
@@ -35,6 +36,7 @@ function search(lastName){
     	}
 };
 
+//add contact
 function add(firstName,lastName,email,phoneNumber){
     contacts[contacts.length] = {
         firstName: firstName,
